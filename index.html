@@ -49,6 +49,21 @@
             animation: colorChange 3s infinite;
         }
 
+        .phrase {
+            font-size: 60px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+            white-space: nowrap;
+            color: #ffffff;
+            text-align: center;
+            margin: 30px; /* Added margin to separate it from the header */
+        }
+
+        .finest {
+            color: #f1ad59;
+            animation: highlight 3s infinite;
+        }
+
         .buttons {
             margin-top: 20px;
         }
@@ -72,7 +87,7 @@
 
         .sushi-menu {
             text-align: center;
-            margin-top: 40%;
+            margin-top: 10px; /* Adjusted margin to create space below the phrase */
         }
 
         .sushi-item {
@@ -101,6 +116,39 @@
             margin-top: 10px;
             text-align: justify;
         }
+
+        .image-under-phrase {
+            margin-top: 10 px; /* Adjust the margin to separate from the phrase */
+        }
+
+        @keyframes colorChange {
+            0%, 10% {
+                color: #F47C00;
+            }
+            20%, 30% {
+                color: #A6AE3E;
+            }
+            40%, 50% {
+                color: #f1ad59;
+            }
+            60%, 70% {
+                color: #F4C303;
+            }
+            80%, 90% {
+                color: #ED4A07;
+            }
+        }
+
+        @keyframes highlight {
+            0%, 100% {
+                background: none;
+                color: #242322;
+            }
+            50% {
+                background: #f1ad59;
+                color: #fff;
+            }
+        }
     </style>
 </head>
 <body>
@@ -115,7 +163,13 @@
             <a href="#" class="button">Contact Us</a>
         </div>
     </div>
-
+    
+    <div class="phrase">Savor the <span class="finest">Finest</span> Sushi<br>in Sushi Serenity</div>
+    
+    <div class="image-under-phrase">
+        <img src="bottom pic.png" alt="Sushi Image">
+    </div>
+    
     <!-- Sushi Menu Section -->
     <div class="sushi-menu">
         <div class="sushi-item">
