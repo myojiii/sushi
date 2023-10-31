@@ -40,11 +40,13 @@
         .phrase {
             position: absolute;
             top: 40%;
-            left: 8%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             font-size: 90px;
             font-weight: bold;
             white-space: nowrap;
             color: #fff;
+            text-align: center;
         }
 
         .finest {
@@ -52,6 +54,13 @@
             animation: highlight 3s infinite;
         }
 
+        .phrase-image {
+            max-width: 80%; /* Adjust the image size as needed */
+            position: absolute;
+            top: calc(45% + 80px); /* Position it below the phrase */
+            left: 50%;
+            transform: translateX(-50%);
+        }
 
         .buttons {
             margin-top: 20px;
@@ -72,13 +81,6 @@
         .button:hover {
             background-color: #F47C00; /* Darker orange on hover */
             color: #FFF;
-        }
-
-        .big-image {
-            position: absolute;
-            top: 40%;
-            right: 10%;
-            max-width: 600px;
         }
 
         @keyframes colorChange {
@@ -115,15 +117,14 @@
     <div class="header">
         <img src="sushi logo.png" alt="Logo" class="logo">
         <div class="store-name"><span style="color: #F47C00;">S</span>us<span style="color: #A6AE3E;">h</span>i<span style="color:#f1ad59;"> S</span>e<span style="color: #F4C303;">r</span>e<span style="color: #ED4A07;">n</span>i<span style="color: #FFC784;">t</span>y</div>
-        <div class="phrase">Savor the <span class="finest">Finest</span> Sushi<br>in Sushi Serenity</div>
+        <div class="phrase">Savor the <span class="finest">Finest</span> Sushi <br> in Sushi Serenity</div>
+        <img src="home pic.png" alt="Image" class="phrase-image">
         <div class="buttons">
             <a href="#" class="button">Home</a>
             <a href="#" class="button">Menu</a>
             <a href="#" class="button">Reservation</a>
             <a href="#" class="button">About Us</a>
             <a href="#" class="button">Contact Us</a>
-
-            <img src="home pic.png" alt="Big Image" class="big-image">
         </div>
     </div>
 </body>
