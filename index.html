@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orange and White Business Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 130vh;
+            background-color: #FE973A; /* Orange background */
+        }
+
+        .header {
+            width: 100%;
+            background-color: #FFF; /* White background for the header */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .logo {
+            max-width: 100px; /* Adjust the logo size as needed */
+        }
+
+        .store-name {
+            font-size: 40px; /* Adjust the font size as needed */
+            font-weight: bold;
+            white-space: nowrap;
+            animation: colorChange 3s infinite;
+        }
+
+        .phrase {
+            position: absolute;
+            top: 40%;
+            left: 8%;
+            font-size: 90px;
+            font-weight: bold;
+            white-space: nowrap;
+            color: #fff;
+        }
+
+        .finest {
+            color: #f1ad59;
+            animation: highlight 3s infinite;
+        }
+
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #FFF;
+            color: #FE973A;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #F47C00; /* Darker orange on hover */
+            color: #FFF;
+        }
+
+        .big-image {
+            position: absolute;
+            top: 40%;
+            right: 10%;
+            max-width: 600px;
+        }
+
+        @keyframes colorChange {
+            0%, 10% {
+                color: #F47C00;
+            }
+            20%, 30% {
+                color: #A6AE3E;
+            }
+            40%, 50% {
+                color: #f1ad59;
+            }
+            60%, 70% {
+                color: #F4C303;
+            }
+            80%, 90% {
+                color: #ED4A07;
+            }
+        }
+
+        @keyframes highlight {
+            0%, 100% {
+                background: none;
+                color: #242322;
+            }
+            50% {
+                background: #f1ad59;
+                color: #fff;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="sushi logo.png" alt="Logo" class="logo">
+        <div class="store-name"><span style="color: #F47C00;">S</span>us<span style="color: #A6AE3E;">h</span>i<span style="color:#f1ad59;"> S</span>e<span style="color: #F4C303;">r</span>e<span style="color: #ED4A07;">n</span>i<span style="color: #FFC784;">t</span>y</div>
+        <div class="phrase">Savor the <span class="finest">Finest</span> Sushi<br>in Sushi Serenity</div>
+        <div class="buttons">
+            <a href="#" class="button">Home</a>
+            <a href="#" class="button">Menu</a>
+            <a href="#" class="button">Reservation</a>
+            <a href="#" class="button">About Us</a>
+            <a href="#" class="button">Contact Us</a>
+
+            <img src="home pic.png" alt="Big Image" class="big-image">
+        </div>
+    </div>
+</body>
+</html>
