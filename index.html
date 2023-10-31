@@ -14,6 +14,18 @@
             align-items: center;
             height: 130vh;
             background-color: #FE973A; /* Orange background */
+            background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent);
+            background-size: 80px 80px;
+            animation: shine 2s linear infinite;
+        }
+
+        @keyframes shine {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: 80px 80px;
+            }
         }
 
         .header {
@@ -55,11 +67,21 @@
         }
 
         .phrase-image {
-            max-width: 80%; /* Adjust the image size as needed */
+            max-width: 100%; /* Adjust the image size as needed */
             position: absolute;
-            top: calc(45% + 80px); /* Position it below the phrase */
+            top: calc(35% + 80px); /* Position it below the phrase */
             left: 50%;
             transform: translateX(-50%);
+        }
+
+        .paragraph {
+            position: absolute;
+            top: 70%;
+            left: 27%;
+            font-size: 30px;
+            color: #fcfcfc;
+            line-height: 1.50;
+            text-align: center;
         }
 
         .buttons {
@@ -118,7 +140,9 @@
         <img src="sushi logo.png" alt="Logo" class="logo">
         <div class="store-name"><span style="color: #F47C00;">S</span>us<span style="color: #A6AE3E;">h</span>i<span style="color:#f1ad59;"> S</span>e<span style="color: #F4C303;">r</span>e<span style="color: #ED4A07;">n</span>i<span style="color: #FFC784;">t</span>y</div>
         <div class="phrase">Savor the <span class="finest">Finest</span> Sushi <br> in Sushi Serenity</div>
-        <img src="home pic.png" alt="Image" class="phrase-image">
+        <p class="paragraph">At Sushi Serenity, we invite you on a journey of culinary bliss,<br> where the delicate art of sushi preparation meets the serenity of an unforgettable 
+            <br>dining experience. Nestled in the heart of Bulacan, our restaurant is a hidden gem,<br> where each visit promises an exquisite fusion of taste and tranquility.</p>
+        <img src="bottom pic.png" class="phrase-image">
         <div class="buttons">
             <a href="#" class="button">Home</a>
             <a href="#" class="button">Menu</a>
